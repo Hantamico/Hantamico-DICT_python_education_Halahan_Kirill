@@ -19,3 +19,23 @@ while x <= y:
     print(x, "!")
     x = x + 1
 print("Completed, have a nice day!")
+
+print("Lets test your knowlege")
+line_q1 = """
+1.Pluton
+2.Mars
+3.Saturn
+4.Earth
+"""
+print("what is the third planet in a row?", line_q1)
+ansv = int(input("Input number of answer >"))
+
+while True:
+    if ansv == 4:
+        print("Sucsess!!!")
+        break
+    else:
+        print("Try again")
+        ansv = int(input("Input number of answer >"))
+
+print("Congratulation!!! Have a nice day")
