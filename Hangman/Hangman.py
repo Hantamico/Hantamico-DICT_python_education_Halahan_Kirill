@@ -2,12 +2,12 @@ import random
 from word_list import word_list
 
 
-def announce():
-    print("HANGAMAN")
-    # print("The game will avalible soon")
-
-
-announce()
+# def announce():
+#     print("HANGAMAN")
+#     print("The game will avalible soon")
+#
+#
+# announce()
 
 
 def word_selection():
@@ -16,6 +16,8 @@ def word_selection():
 
 
 def game(word):
+    under = "_" * len(word[3:])
+    print(word[:3] + under)
     guessed_word = input("Guess the word:>").lower()
     if guessed_word == word:
         print("You guess the word,", guessed_word, "\n You survived")
@@ -23,6 +25,7 @@ def game(word):
         print("You lose, try again")
 
 def main():
+    print("HANGMAN")
     word = word_selection()
     game(word)
 
